@@ -76,8 +76,8 @@ void processInput(GLFWwindow *window)
 
     if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_RIGHT) == GLFW_PRESS)
     {
-        float vx = (float)(mx - prev_mouse_x) * (f->N / (float)win_width);
-        float vy = (float)(prev_mouse_y - my) * (f->N / (float)win_height);
+        float vx = (float)(mx - prev_mouse_x) * 10.f * (f->N / (float)win_width);
+        float vy = (float)(prev_mouse_y - my) * 10.f * (f->N / (float)win_height);
         fluid_add_velocity(f, ix, iy, vx, -vy);
     }
 
