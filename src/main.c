@@ -223,9 +223,9 @@ int main()
         glBindTexture(GL_TEXTURE_2D, tex);
         glDrawArrays(GL_TRIANGLES, 0, 6);
 
-        glUseProgram(arrowShader);
-        glBindVertexArray(arrowVAO);
-        glDrawArraysInstanced(GL_TRIANGLES, 0, 4, N * N);
+        //glUseProgram(arrowShader);
+        //glBindVertexArray(arrowVAO);
+        //glDrawArraysInstanced(GL_TRIANGLES, 0, 4, N * N);
 
         glfwSwapBuffers(window);
         glfwPollEvents();
